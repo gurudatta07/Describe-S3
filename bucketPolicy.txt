@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::xxxxxxxxx:user/xxxxx"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::xxxxxxxx",
+                "arn:aws:s3:::xxxxxxxx/*"
+            ]
+        }
+    ]
+}
